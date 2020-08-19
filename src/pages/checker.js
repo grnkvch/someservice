@@ -2,7 +2,7 @@ import React from "react"
 import Helmet from "react-helmet"
 
 export default function checker() {
-  if(document){
+  if(!(typeof window === "undefined" || !window.document)){
     if(document.cookie.includes('epam-club-app')){
         let id = document.cookie.split(':')[1]
         alert('EPAM club user id:' + id)

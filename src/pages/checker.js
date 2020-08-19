@@ -14,7 +14,7 @@ export default function checker() {
   }
     
   return <> 
-    <Helmet title='asdasd1213'>
+    <Helmet title='SOME SERVICE'>
     </Helmet>
   </>
 }

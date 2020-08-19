@@ -23,7 +23,7 @@ export default function licence() {
   <div>
       <h1>SOME LICENCE AGREEMENT</h1>
       <a onClick={()=>{
-          document.cookie =`epam-club-app:${getQueryVariable('id')}; SameSite=None; Secure;`;
+          document.cookie =`epam-club-app:${getQueryVariable('id')}; SameSite=None; Secure; path=/checker;`;
       }} href='https://epamclub.page.link/verification'>I AGREE</a>
   </div>
   </>

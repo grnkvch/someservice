@@ -16,5 +16,13 @@ export default function checker() {
   return <> 
     <Helmet title='SOME SERVICE'>
     </Helmet>
+    <div>
+      <button onClick={()=>{
+        document.cookie =`SOME_COOKIE; SameSite=None; Secure; path=/checker; expires=Tue, 19 Jan 2038 03:14:07 GMT;`;
+      }}>ADD cookie</button>
+      <button onClick={()=>{
+        alert(document.cookie)
+      }}>CHECK cookie</button>
+    </div>
   </>
 }
